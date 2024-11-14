@@ -1,0 +1,31 @@
+//taking index and number from user
+import java.util.*;
+class Main
+{
+      
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    //int[] array=new int[5];
+    int[] array={1,2,3,4,5};
+    System.out.println(Arrays.toString(array));
+    System.out.println("update");
+    change(array);
+     System.out.println(Arrays.toString(array));
+    
+    }
+    public static void change(int[] arr){
+         Scanner sc=new Scanner(System.in);
+        int m,n;
+        System.out.println("enter a index number for updatation");
+        m=sc.nextInt();
+        System.out.println("enter a number to update at:" + m +"index");
+        n=sc.nextInt();
+        arr[m]=n;
+        
+    
+        
+        
+        
+    }
+}
+   
