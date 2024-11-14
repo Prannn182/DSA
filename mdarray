@@ -1,0 +1,30 @@
+//taking input from the user
+import java.util.*;
+class Main
+{
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int m,n;
+    System.out.println("enter numbers u want to enter");
+    m=sc.nextInt();
+    n=sc.nextInt();
+    System.out.println("Array input");
+    int[][] arr=new int[m][n];
+    for(int rows=0;rows<arr.length;rows++){
+        for(int col=0;col<arr[rows].length;col++){
+            arr[rows][col]=sc.nextInt();
+        }
+    }
+    System.out.println("DISPLAYING");
+    for(int rows=0;rows<arr.length;rows++){
+        {
+               System.out.println(Arrays.toString(arr[rows]));
+           }
+       
+        
+    }
+        
+        
+        
+        
+    }}
