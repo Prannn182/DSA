@@ -1,0 +1,25 @@
+2D array
+--------------------
+
+import java.util.*;
+public class Mdarray
+{
+public static void main(String[] args)
+{
+int[][] arr = new int[3][3];
+Scanner sc=new Scanner(System.in);
+System.out.println("Input");
+for(int rows=0;rows<arr.length;rows++)
+{
+    for(int col=0;col<arr[rows].length;col++)
+{ 
+    arr[rows][col]=sc.nextInt();
+}
+    
+}
+for(int rows=0;rows<arr.length;rows++)
+{ System.out.println(Arrays.toString(arr[rows]));
+    
+}
+}
+}
