@@ -1,0 +1,30 @@
+package pranali_DSA;
+import java.util.*;
+import java.lang.*;
+public class linearsearch {
+	
+	public static void main(String[] args)throws ArrayIndexOutOfBoundsException {
+	int[] arr=new int[10];
+	Scanner sc=new Scanner(System.in);
+	int i,m; boolean found=false;
+	
+	System.out.println("enter your array");
+	for( i=0;i<arr.length;i++) {
+	arr[i]=sc.nextInt();
+	}
+	System.out.println("enter number you want to search");
+	m=sc.nextInt();
+	
+	for( i=0;i<arr.length;i++) {
+	if(arr[i]==m) {
+		found=true;
+		System.out.println("found element at" + i + "index");}
+	
+	}
+	
+	if(!found) {
+	System.out.println("not found");	}
+	
+}}
+
+
