@@ -1,0 +1,24 @@
+package pranali_DSA;
+import java.util.*;
+
+public class searchinstring {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter a string");
+	String name=sc.next();
+	System.out.println("enter a character to search");
+	char target=sc.next().charAt(0);
+	System.out.println(search(name,target));
+} static boolean search(String name,char target) {
+	if(name.length()==0) {
+		return false;
+	}
+	for(int i=0;i<name.length();i++) {
+	if(target==name.charAt(i)) {
+		return true;
+	}
+	
+}
+	return false;
+}
+}
