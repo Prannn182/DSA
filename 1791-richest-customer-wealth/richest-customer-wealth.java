@@ -7,7 +7,7 @@ class Solution {
         for(int account:person){
             sum+=account; //this will sum the account wealth
         }
-         maxwealth=Math.max(maxwealth,sum);   //if(sum>maxwealth){sum=ans;}
+         maxwealth=Math.max(maxwealth,sum);   //if(sum>maxwealth){sum=maxwealth;}
         
     }    
  return maxwealth;}}
