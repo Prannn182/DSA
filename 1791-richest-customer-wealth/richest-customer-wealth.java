@@ -5,7 +5,7 @@ class Solution {
         for(int[] person:accounts){
              int sum=0;
         for(int account:person){
-            sum+=account;
+            sum+=account; //this will sum the account wealth
         }
         if(sum>ans){
             ans=sum;
