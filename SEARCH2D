@@ -1,0 +1,41 @@
+package pranali_DSA;
+import java.util.*;
+
+public class search2d {
+	public static void main(String[] args) {
+		int[][] arr= {
+				{10,20,89},{456,76,54,23},{15,64,89},{12,87}
+		};
+ 		int target=64;
+ 		int[] ans=search2d(arr,target);
+ 		System.out.println(Arrays.toString(ans));
+ 		System.out.println(Integer.MIN_VALUE);
+ 		System.out.println(Integer.MAX_VALUE);
+ 		
+ 		System.out.println(max(arr));}
+	
+     static int[] search2d(int[][] arr,int target)
+     {
+    	
+    	for(int rows=0;rows<arr.length;rows++) {
+    		for(int col=0;col<arr[rows].length;col++) {
+    			 if(arr[rows][col]==target) {
+    				return new int[] {rows,col};
+    			 }
+    		 }
+    	 } return new int[] {-1,-1};
+     }
+    static int max(int[][] arr) {
+    		int max=Integer.MIN_VALUE;//will fetch the minimum value 
+     	for(int rows[]:arr) {
+     		for(int col:rows) {
+     			 if(col>max) {
+     				 max= col;
+     			 }
+     		     
+     			 }
+     		 
+     	}
+    	 return max;
+     }
+}
