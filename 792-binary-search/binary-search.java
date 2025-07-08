@@ -5,10 +5,10 @@ class Solution {
         while(start<=end){
           int mid=start+(end-start)/2;
           if(target<nums[mid]){
-            end=mid-1;
+            end--;
           }
           else if(target>nums[mid]){
-            start=mid+1;
+            start++;
           }
           else{
             return mid;
