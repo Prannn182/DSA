@@ -4,8 +4,8 @@ class Solution {
         int duplicate=0;
         for(int i=0;i<nums.length-1;i++){
             if(nums[i]==nums[i+1]){
-               return nums[i];
+             duplicate=nums[i];
             }
-        }return -1;
+        }return duplicate;
     }
 }
