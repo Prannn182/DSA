@@ -1,0 +1,20 @@
+/**
+ * @param {Function} fn
+ * @return {Object}
+ */
+Array.prototype.groupBy = function(fn) {
+    const result = {};
+    for (const item of this) {
+        const key = fn(item);   // generate key from callback
+        if (!(key in result)) {
+            result[key] = [];   // initialize if key not present
+        }
+        result[key].push(item); // push item into correct group
+    }
+    return result;
+};
+
+
+/**
+ * [1,2,3].groupBy(String) // {"1":[1],"2":[2],"3":[3]}
+ */
