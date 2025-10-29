@@ -10,14 +10,20 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode temp=head;
-        ListNode last=null;
-        while(temp!=null){
-            ListNode next=temp.next; //idhr next ki current value h nayi node
-            temp.next=last; //idhr hum temp.next ki purani value last or prev ko assign krenge which is null rn
-            last=temp; // idhr last or prev will update and will have the value of temp
-            temp=next; // assigning temp to next 
+        if(head==null){
+            return head;
         }
-        return last;
+       ListNode prev=null;
+       ListNode pres=head;
+       ListNode next=pres.next;
+       while(pres!=null){
+        pres.next=prev;
+        prev=pres;
+        pres=next;
+        if(next!=null){
+            next=next.next;
+        }
+       }
+       return prev;
     }
 }
