@@ -22,6 +22,6 @@ class Solution {
                 prev=prev.next;
             }
         }
-        return dummy.next;
+        return dummy.next; //if returned head than will return entire list;
     }
 }
